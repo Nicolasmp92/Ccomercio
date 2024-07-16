@@ -1,0 +1,46 @@
+<!-- src/app/components/auth/login/login.component.html -->
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body bg-danger-emphasis">
+      <div class="row">
+        <div class="col-4 mt-5">
+          <img class="img-fluid mt-20" src="../../assets/LH.gif" alt="logotecnohoot">
+        </div>
+        <div class="col-8 my-5">
+          <h3 class="card-title fw-bold text-center text-dark">Iniciar Sesión</h3>
+          <form (ngSubmit)="onSubmit()">
+            <div class="col-lg-6 text-center mt-5">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">root</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">administracion</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                <label class="form-check-label" for="flexRadioDefault3">ventas</label>
+              </div>
+            </div>
+            <div class="mt-5 mb-3">
+              <label for="usuario" class="form-label"> Usuario</label>
+              <input type="text" class="form-control" required name="usuario" id="usuario" placeholder="Ingrese su Rut" [(ngModel)]="usuario">
+            </div>
+            <div class="mt-5 mb-3">
+              <label for="pass" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" required name="pass" id="pass" placeholder="Ingrese su contraseña" [(ngModel)]="pass">
+            </div>
+            <div class="form-check form-switch mb-5">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Recordar mi usuario</label>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" name="id" class="btn btn-secondary">Acceder</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
